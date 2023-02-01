@@ -1,4 +1,4 @@
-# This is a practice Python script for scikit image processing
+# This is a practice Python script for scikit image processing, specifically using region-based detection
 
 from skimage import data
 from skimage.exposure import histogram
@@ -10,7 +10,7 @@ from skimage.segmentation import watershed
 
 coins = data.coins()
 
-# check the pixel values to identify likely edge values
+# check the pixel values to identify likely coin region values
 hist, hist_centers = histogram(coins)
 # plt.plot(hist)
 # plt.show()
